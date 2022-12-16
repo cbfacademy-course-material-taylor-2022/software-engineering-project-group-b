@@ -1,4 +1,7 @@
-# MERN Stack Project
+# PetitionUs
+
+A petition App with CRUD functionality with a comprehensive list of attendees. An interactive app that allows stakeholders to
+search, query and chronicle their list of supporters
 
 Here's some boilerplate code with the initial setup for your project.
 
