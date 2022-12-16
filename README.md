@@ -1,7 +1,18 @@
 # PetitionUs
 
 A petition App with CRUD functionality with a comprehensive list of attendees. An interactive app that allows stakeholders to
-search, query and chronicle their list of supporters
+search, query and chronicle their list of supporters.
+
+## Tech stack
+
+* Node (v18.12)
+* NPM (8.19.2)
+* Jest (v29.3.1) for unit testing on the backend.
+* Cypress for end-to-end testing and component testing on the frontend.
+* Mongoose to model objects in MongoDB.
+* Nodemon (2.0.20) to reload the server automatically.
+* React Spring (v9.2.4) for animations.
+
 
 Here's some boilerplate code with the initial setup for your project.
 
