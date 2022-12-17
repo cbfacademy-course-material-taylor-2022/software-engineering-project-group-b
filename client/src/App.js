@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 // SERVICES THAT CALL OUR API ENDPOINTS
 import { getAllProfiles } from "./services/profileService";
 
+
 function App() {
   const [profiles, setProfiles] = useState(null);
 

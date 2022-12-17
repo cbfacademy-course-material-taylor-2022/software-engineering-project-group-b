@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const { Schema } = mongoose;
 
 const profileSchema = new Schema({
@@ -7,4 +8,7 @@ const profileSchema = new Schema({
   location: String,
 });
 
-mongoose.model("profiles", profileSchema);
+const ProfilesModel = mongoose.model("profiles", profileSchema);
+
+
+module.exports = ProfilesModel;

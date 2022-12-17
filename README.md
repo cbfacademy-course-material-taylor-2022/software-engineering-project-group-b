@@ -1,7 +1,6 @@
 # PetitionUs
 
-A petition App with CRUD functionality with a comprehensive list of attendees. An interactive app that allows stakeholders to
-search, query and chronicle their list of supporters.
+A petition App with CRUD functionality with a comprehensive list of petitonees that support the cause. An interactive app that allows stakeholders to search, query, chronicle and track their list of supporters.
 
 ## Tech stack
 
@@ -13,6 +12,48 @@ search, query and chronicle their list of supporters.
 * Nodemon (2.0.20) to reload the server automatically.
 * React Spring (v9.2.4) for animations.
 
+## User Stories
+```
+As a PetitionUs user
+So I can signup with ease 
+I would like to ...
+```
+
+```
+As a PetitionUs user
+So I can ...
+I would like to ...
+```
+
+```
+As a PetitionUs user
+So I can ...
+I would like to ...
+```
+
+```
+As a PetitionUs user
+So I can ...
+I would like to ...
+```
+
+```
+As a PetitionUs user
+So I can ...
+I would like to ...
+```
+
+```
+As a PetitionUs user
+So I can ...
+I would like to ...
+```
+
+## Diagrams
+
+### Backend Diagram
+
+### Frontend Diagram
 
 Here's some boilerplate code with the initial setup for your project.
 
