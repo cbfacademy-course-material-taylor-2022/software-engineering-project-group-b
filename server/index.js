@@ -11,6 +11,7 @@ require("dotenv").config();
 
  // This is where your API is making its initial connection to the database
  mongoose.Promise = global.Promise;
+ mongoose.set("strictQuery", true);
  mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
    useNewUrlParser: true,
  });
