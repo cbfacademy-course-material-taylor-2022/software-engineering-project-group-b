@@ -3,7 +3,7 @@
  const { Schema } = mongoose;
 
  const profileSchema = new Schema({
-   first_name: String,
+   first_name: String,required: true, 
    last_name: String,
    location: String,
  });
