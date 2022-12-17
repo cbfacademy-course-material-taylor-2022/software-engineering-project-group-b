@@ -15,39 +15,32 @@ A petition App with CRUD functionality with a comprehensive list of petitonees t
 ## User Stories
 ```
 As a PetitionUs user
-So I can signup with ease 
-I would like to ...
+So I can read and understand the issues related to the cause.
+I would like to understand what the petition is about and be clear that it aligns with my personal values prior to signing the form
+Given that I agree with the principles of the petition 
 ```
 
 ```
 As a PetitionUs user
-So I can ...
-I would like to ...
+So I can easily sign up with ease
+I would like to add my name, email and location to the petition 
+Given that I want to be part of this cause.
 ```
 
 ```
 As a PetitionUs user
-So I can ...
-I would like to ...
+So I can update my personal details - email or location
+I would like to keep my entry up to date and current 
+Given that I want to remain an active participant 
 ```
 
 ```
 As a PetitionUs user
-So I can ...
-I would like to ...
+So I can change my mind and delete my entry as I see fit 
+I would like to have freedom of choice 
+Given that I have choices 
 ```
 
-```
-As a PetitionUs user
-So I can ...
-I would like to ...
-```
-
-```
-As a PetitionUs user
-So I can ...
-I would like to ...
-```
 
 ## Diagrams
 
