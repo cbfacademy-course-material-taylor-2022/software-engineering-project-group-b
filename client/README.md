@@ -7,7 +7,6 @@ Once you have your development environment up and running you'll be able to see 
 ```plain
 http://localhost:3000
 ```
-
 ## Example App
 
 In the example we have provided the below for you to see:
