@@ -48,6 +48,11 @@ Given that I have choices
 
 ### Frontend Diagram
 
+## Wireframe
+
+### User experience (UX)
+<img src='client/src/images/wireframe.png'/>
+
 Here's some boilerplate code with the initial setup for your project.
 
 The expectation with this code is that you're able to clone the repository and get started building your own fullstack ([MERN](https://www.mongodb.com/mern-stack)) application.
