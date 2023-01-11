@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Navbar from './components/Navbar.js'
 
  // SERVICES THAT CALL OUR API ENDPOINTS
  import { getAllProfiles } from "./services/profileService";
@@ -19,6 +20,8 @@ import React, { useState, useEffect } from "react";
 
    const renderProfile = (user) => {
      return (
+    
+    
        <li key={user._id}>
          <h3>
            {`${user.first_name} 
@@ -26,11 +29,13 @@ import React, { useState, useEffect } from "react";
          </h3>
          <p>{user.location}</p>
        </li>
+      
      );
    };
 
    return (
      <div>
+        <Navbar/>
        <ul>
          {profiles && profiles.length > 0 ? (
            profiles.map((profile) => renderProfile(profile))
@@ -38,7 +43,9 @@ import React, { useState, useEffect } from "react";
            <p>No profiles found</p>
          )}
        </ul>
+       
      </div>
+     
    );
  }
 
