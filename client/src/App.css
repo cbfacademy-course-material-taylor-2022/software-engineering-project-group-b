@@ -1,5 +1,23 @@
 /* Font: futura bold and medium
-body copy font: athelas (basically times I think)
+
+medium
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+</style>
+
+bold
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+</style>
+
+<style> athelas
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+</style>
+
+yellow
+{background-color:rgb(255, 255, 255)}
+grey
+{background-color:rgb(156, 157, 157)}
 
 Yellow:
 R: 255
@@ -10,6 +28,7 @@ Grey:
 R: 156
 G: 157
 B: 157 */
+
 
 .App{
   text-align: center;
@@ -49,3 +68,4 @@ B: 157 */
     transform: rotate(360deg);
   }
 }
+
