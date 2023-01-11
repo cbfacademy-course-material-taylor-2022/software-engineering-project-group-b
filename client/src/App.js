@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Navbar from './components/Navbar.js'
+// import Navbar from './components/Navbar.js'
+import NavbarSmall from './components/NavbarSmall.js'
 
  // SERVICES THAT CALL OUR API ENDPOINTS
  import { getAllProfiles } from "./services/profileService";
@@ -35,7 +36,8 @@ import Navbar from './components/Navbar.js'
 
    return (
      <div>
-        <Navbar/>
+        {/* <Navbar/> */}
+        <NavbarSmall/>
        <ul>
          {profiles && profiles.length > 0 ? (
            profiles.map((profile) => renderProfile(profile))
