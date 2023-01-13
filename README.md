@@ -43,6 +43,7 @@ Given that I have choices
 
 #### | [TRELLO BOARD](| [TRELLO BOARD](https://trello.com/c/y6uuRQFU/1-ideas-for-apps))
 
+
 ## Diagrams
 
 ### Frontend & Backend Diagram
