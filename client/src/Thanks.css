@@ -1,0 +1,15 @@
+.hightlight-title {
+    display:flex;
+    align-items: center;
+
+}
+
+.hightlight-title h2 {
+    border-right:4px; /* <see colour refs in app.css></see> */
+   padding-right: 10px;
+
+}
+
+highlight-title img {
+    margin-left:auto;
+}

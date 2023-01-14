@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Thanks from './Thanks'
     
     
-const App = () => {}
+const App = () => {
     return(
         <Router>
             <Routes>
