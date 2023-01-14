@@ -26,6 +26,10 @@
 .signature form label{
     margin: 10px 0;
 }
+.signature form .multiple-input-container {
+    display: flex;
+    flex-direction: row;
+}
 
 .signature form input ::-webkit-outer-spin-button,
 .signature form input ::-webkit-inner-spin-button {

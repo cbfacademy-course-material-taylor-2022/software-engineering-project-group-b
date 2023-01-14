@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import './signature.css'
-import image from './images/boywithtray.jpg';
+import image from './images/newboywithtray.png';
 
 
  // SERVICES THAT CALL OUR API ENDPOINTS
@@ -110,8 +110,12 @@ const Signature= () => {
                     value={formData.location}
                     onChange={handleChange}
                 />  
+                <input type="submit"/>
+                    </section>
 
-                    <div className="photo-container"><img src={image} alt="meals" width={500}/>
+                    <section>
+
+                    <div className="photo-container"><img src={image} alt="meals" width={600}/>
 
                     </div>
          
