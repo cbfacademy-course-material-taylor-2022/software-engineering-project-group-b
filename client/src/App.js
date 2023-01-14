@@ -1,45 +1,63 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from 'react';
 
- // SERVICES THAT CALL OUR API ENDPOINTS
- import { getAllProfiles } from "./services/profileService";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Thanks from './Thanks'
+    
+    
+const App = () => {}
+    return(
+        <Router>
+            <Routes>
+                <Route exact path="/" element={ <Thanks/> }/>   
+            </Routes>
+        </Router>
+        );
 
- function App() {
-   const [profiles, setProfiles] = useState(null);
+}
+export default App;
 
-   useEffect(() => {
-     async function getProfiles() {
-       if (!profiles) {
-         const response = await getAllProfiles();
-         setProfiles(response);
-       }
-     }
+// import React, { useState, useEffect } from "react";
 
-     getProfiles();
-   }, [profiles]);
+//  // SERVICES THAT CALL OUR API ENDPOINTS
+//  import { getAllProfiles } from "./services/profileService";
 
-   const renderProfile = (user) => {
-     return (
-       <li key={user._id}>
-         <h3>
-           {`${user.first_name} 
-           ${user.last_name}`}
-         </h3>
-         <p>{user.location}</p>
-       </li>
-     );
-   };
+//  function App() {
+//    const [profiles, setProfiles] = useState(null);
 
-   return (
-     <div>
-       <ul>
-         {profiles && profiles.length > 0 ? (
-           profiles.map((profile) => renderProfile(profile))
-         ) : (
-           <p>No profiles found</p>
-         )}
-       </ul>
-     </div>
-   );
- }
+//    useEffect(() => {
+//      async function getProfiles() {
+//        if (!profiles) {
+//          const response = await getAllProfiles();
+//          setProfiles(response);
+//        }
+//      }
 
- export default App;
+//      getProfiles();
+//    }, [profiles]);
+
+//    const renderProfile = (user) => {
+//      return (
+//        <li key={user._id}>
+//          <h3>
+//            {`${user.first_name} 
+//            ${user.last_name}`}
+//          </h3>
+//          <p>{user.location}</p>
+//        </li>
+//      );
+//    };
+
+//    return (
+//      <div>
+//        <ul>
+//          {profiles && profiles.length > 0 ? (
+//            profiles.map((profile) => renderProfile(profile))
+//          ) : (
+//            <p>No profiles found</p>
+//          )}
+//        </ul>
+//      </div>
+//    );
+//  }
+
+//  export default App;
