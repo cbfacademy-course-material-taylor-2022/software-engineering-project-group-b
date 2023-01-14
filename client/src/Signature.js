@@ -60,7 +60,7 @@ const Signature= () => {
    
        
         <div className="signature">
-               <h2>FREE SCHOOL DINNERS</h2>
+               <h1>FREE SCHOOL DINNERS</h1>
                <h2>PETITION.</h2>
 
                 <form onSubmit={handleSubmit}>
