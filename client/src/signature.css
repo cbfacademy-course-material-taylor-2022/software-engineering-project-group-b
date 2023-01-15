@@ -1,13 +1,70 @@
-.signature {
-    border-top: solid 1px rgb(213,213,213)
+   /* .container background{ 
+     background-color: rgb(156, 157, 157);  
+
+  }   */
+ .overlay {
+    /* width: 100vw;
+    height: 100vh;
+    position: fixed; */
+    background-color: rgb(156, 157, 157); 
+   
+  } 
+
+  
+    
+
+.yellow-border {
+    border: solid 2px rgb(255, 255, 0);
+    box-sizing:border-box;
+    
+    /* padding: 10px; */
+    display: "inline-block";
+    background-color:rgb(255, 255, 0) ;
+    font-size: 1.5em;
+    margin-bottom: 50px ;
+    margin-top: 40%; 
+    /* padding: 20px 10px; */
+    /* padding-top: 50px; */
+    padding-right: 50px;
+    margin-left: 20px;
+    position:relative;
+    top:30px;
 }
 
-.signature form {
+ .yellow-border2 {
+    border: solid 2px rgb(255, 255, 0);
+    box-sizing:border-box;
+    padding: 10px;
+    display: "inline-block";
+    background-color:rgb(255, 255, 0) ;
+    font-size: 1.5em;
+    margin-bottom: 50px ;
+    margin-top: 50px; 
+    padding-right: 50px;
+    margin-left: 20px;
+    position:relative;
+    top:30px;
+
+
+ }
+
+
+.container form {
     display: flex;
-    justify-content: center;
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-right: 10px; */
+
+    justify-content:center; 
+    margin-left: -200px;
+    /* margin-top: 40px;
+    margin-bottom: 10px; */
+
+
 }
 
-.signature form section {
+.container form section {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -15,7 +72,7 @@
     text-align:start;
 }
 
-.signature form input{
+.container form input{
     padding: 15px 30px;
     margin: 10px 0;
     font-size: 15px;
@@ -23,25 +80,25 @@
     /* border-radius:10px; */
 }
 
-.signature form label{
+.container form label{
     margin: 10px 0;
 }
-.signature form .multiple-input-container {
+.container form .multiple-input-container {
     display: flex;
     flex-direction: row;
 }
 
-.signature form input ::-webkit-outer-spin-button,
-.signature form input ::-webkit-inner-spin-button {
+.container form input ::-webkit-outer-spin-button,
+.container form input ::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.signature form .multiple-input-container input {
+.container form .multiple-input-container input {
     margin-right:10px;
 }
 
-.signature form .multiple-input-container label {
+.container form .multiple-input-container label {
     padding: 10px;
     border: solid 2px rgb(144,144,144);
     /* border-radius:10px; */
@@ -49,26 +106,76 @@
     margin-right: 10px;
 }
 
-.signature form input[type=radio] {
+.container form input[type=radio] {
     display:none;
 }
 
-.signature form input[type=number]{
+container form input[type=number]{
     width:10%;
 }
 
-.signature form input[type=radio]:checked + label {
+container form input[type=radio]:checked + label {
     border: solid 2px rgb(221,39,22)
 }
 
-.signature form input[type=submit]:hover {
+container form input[type=submit]:hover {
     background-color: rgb(235,235,235);
 }
-signature form input[type=submit]:active{
+container form input[type=submit]:active{
     background-color: rgb(226,115,115);
 }
+
+container .photo-container img {
+    width: 10%;
+    /* position: relative;
+    transform: translate(-1000px,1000px); */
+    /* margin-top: -150px;
+    margin-left: 150px; */
+
+ }
+
+ .image{
+    position: absolute;
+    transform: translate(-4000px,4000px);
+ }
 /* submit form button required */
 
-signature form .photo-container img {
-    width: 100%
-}
+/* container form .photo-container img { */
+    /* justify-content: margin right; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    /* width: 50%;
+    display: flex; */
+    /* align-self: flex-end; */
+    /* align-items: flex-start; */
+    /* margin-top: 20px; */
+  
+/* } */
+
+/* .container{
+    display:flex;
+    align-items: flex-start;
+    /* background-color:rgb(156, 157, 157) */
+
+    /* .container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color:rgb(156, 157, 157)
+ }  */
+
+
+/* .photo-container {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+} */
+
+    /* border-top: solid 1px rgb(213,213,213); */
+    /* background-color:rgb(156, 157, 157) */
+  
+/* } */
+
+ 

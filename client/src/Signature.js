@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import './signature.css'
 import image from './images/newboywithtray.png';
+import './App.css'
 
 
  // SERVICES THAT CALL OUR API ENDPOINTS
@@ -49,6 +50,7 @@ const Signature= () => {
 
    return (
     <>
+    <div classnName="overlay">
     <NavbarSmall
         minimal={true}
         setShowModal={() => {
@@ -57,20 +59,26 @@ const Signature= () => {
         showModal={false}
     
     />
-   
-       
-        <div className="signature">
-               <h1>FREE SCHOOL DINNERS</h1>
-               <h2>PETITION.</h2>
+  
+       <div className="container">
+       <div className="background" style={{backgroundColor: 'rgb(156, 157, 157)'}}>
+                 <h1><span className="yellow-border">FREE SCHOOL DINNERS</span></h1>
+               <h1><span className="yellow-border2">PETITION.</span></h1>
+               
+               
+              
+           
+               
+                
 
-                <form onSubmit={handleSubmit}>
+                 <form onSubmit={handleSubmit}>
                     <section>
                         <label htmlFor="first_name">First Name</label>
                         <input
                         id="first_name"
                         type='text'
                         name="first_name"
-                        placeholder="First Name"
+                        // placeholder="First Name"
                         required={true}
                         value={formData.first_name}
                         onChange={handleChange}
@@ -81,7 +89,7 @@ const Signature= () => {
                     id="last_name"
                     type='text'
                     name="last_name"
-                    placeholder="Last Name"
+                    // placeholder="Last Name"
                     required={true}
                     value={formData.last_name}
                     onChange={handleChange}
@@ -93,38 +101,44 @@ const Signature= () => {
                     id="email"
                     type='text'
                     name="email"
-                    placeholder="Email"
+                    // placeholder="Email"
                     required={true}
                     value={formData.email}
                     onChange={handleChange}
 
                 />
+              
 
                 <label htmlFor="location">Location</label>
                     <input
                     id="location"
                     type='text'
                     name="location"
-                    placeholder="Location"
+                    // placeholder="Location"
                     required={true}
                     value={formData.location}
                     onChange={handleChange}
                 />  
-                <input type="submit"/>
+                    <input type="submit"/>
+                </section>
+
+                <section>
+            
+                 <div className="photo-container"><img src={image} alt="meals" style={{position:"absolute", marginTop:"-180px", marginLeft: "100px"}}width={650}/>
+                </div>
+              
                     </section>
 
-                    <section>
+            </form> 
 
-                    <div className="photo-container"><img src={image} alt="meals" width={600}/>
-
-                    </div>
-         
-                </section>
-            </form>
-        </div>
-        </>   
+            </div>
+            </div>
+            </div>
+            </>
+      
+       
         )
 
    }
 
-export default Signature
+export default Signature;
