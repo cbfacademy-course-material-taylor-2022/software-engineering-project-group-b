@@ -1,23 +1,19 @@
 
-
-
-
 // import React, { useState, useEffect } from "react";
 // // import Navbar from './components/Navbar.js'
 // import NavbarSmall from './components/NavbarSmall.js'
 // import onBoarding from './onBoarding.js'
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-=======
 import React from 'react'
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signature from './Signature'
 import Thanks from './Thanks'
     
     
-const App = () => {}
+const App = () => {
     return(
         <Router>
             <Routes>
@@ -70,7 +66,7 @@ export default App;
 //         {/* <Navbar/> */}
 //         <NavbarSmall/>
 //         <onBoarding/>
-=======
+
 
 //        <ul>
 //          {profiles && profiles.length > 0 ? (
@@ -92,7 +88,7 @@ export default App;
 //  }
 
 //  export default App;
-=======
+
 //            <p>No profiles found</p>
 //          )}
 //        </ul>
