@@ -119,7 +119,8 @@ const Signature= () => {
                     value={formData.location}
                     onChange={handleChange}
                 />  
-                    <input type="submit"/>
+                   {/* <input type="submit" className="submit-button"/> */}
+                   <button className="primary-button" style={{fontSize:"40px", borderColor:"black", backgroundColor:"black", borderWidth: "10px", width: "350px", color: 'rgb(255,255,0)', marginTop: "30px", }}onClick={handleSubmit}>Sign the petition</button>
                 </section>
 
                 <section>
