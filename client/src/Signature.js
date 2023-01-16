@@ -119,7 +119,7 @@ const Signature= () => {
                     value={formData.location}
                     onChange={handleChange}
                 />  
-                    <input type="submit"/>
+                    <input type="submit" className="submit-button"/>
                 </section>
 
                 <section>
