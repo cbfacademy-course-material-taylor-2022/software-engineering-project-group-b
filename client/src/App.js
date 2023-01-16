@@ -1,7 +1,19 @@
 
+
+
+
+// import React, { useState, useEffect } from "react";
+// // import Navbar from './components/Navbar.js'
+// import NavbarSmall from './components/NavbarSmall.js'
+// import onBoarding from './onBoarding.js'
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+=======
+import React from 'react'
 import React, { useState } from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Signature from './Signature'
 import Thanks from './Thanks'
     
     
@@ -9,6 +21,7 @@ const App = () => {}
     return(
         <Router>
             <Routes>
+                <Route path="/" element={<Signature />}/>
                 <Route exact path="/" element={ <Thanks/> }/>   
             </Routes>
         </Router>
@@ -18,6 +31,7 @@ const App = () => {}
 export default App;
 
 // import React, { useState, useEffect } from "react";
+
 
 //  // SERVICES THAT CALL OUR API ENDPOINTS
 //  import { getAllProfiles } from "./services/profileService";
@@ -38,6 +52,7 @@ export default App;
 
 //    const renderProfile = (user) => {
 //      return (
+
 //        <li key={user._id}>
 //          <h3>
 //            {`${user.first_name} 
@@ -45,15 +60,39 @@ export default App;
 //          </h3>
 //          <p>{user.location}</p>
 //        </li>
+
 //      );
 //    };
 
 //    return (
 //      <div>
+
+//         {/* <Navbar/> */}
+//         <NavbarSmall/>
+//         <onBoarding/>
+=======
+
 //        <ul>
 //          {profiles && profiles.length > 0 ? (
 //            profiles.map((profile) => renderProfile(profile))
 //          ) : (
+
+//            //<p>No profiles found</p>
+
+//            <BrowserRouter>
+//            <Route exact path="/" render={()=>(<onBoarding/>)}/>
+//            </BrowserRouter>
+//          )}
+//        </ul>
+       
+//      </div>
+     
+//    );
+ 
+//  }
+
+//  export default App;
+=======
 //            <p>No profiles found</p>
 //          )}
 //        </ul>
@@ -62,3 +101,4 @@ export default App;
 //  }
 
 //  export default App;
+

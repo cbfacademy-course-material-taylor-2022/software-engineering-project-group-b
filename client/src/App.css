@@ -30,11 +30,15 @@ G: 157
 B: 157 */
 
 
-.App{
-  text-align: center;
+.App {
+  /* text-align: center; */
+  background-color:rgb(156, 157, 157)
+  
 }
 
-.App-logo {
+
+ 
+/*.App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -67,5 +71,5 @@ B: 157 */
   to {
     transform: rotate(360deg);
   }
-}
-
+} */
+ 
