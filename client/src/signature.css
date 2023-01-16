@@ -34,13 +34,16 @@
     margin-left: 20px;
     position:relative;
     top:30px;
-
- 
 }
 
 @media (max-width: 600px) {
    .yellow-border {
-    font-size:24px;
+    font-size:1em;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    padding-right: 25px;
+    margin-left: 10px;
+    top: 15px;
    }
 }
 
@@ -167,7 +170,12 @@ container form input[type=submit]:active{
     color: rgb(255, 255, 0); 
  }
 
-container .photo-container img {
+ .photo-container{
+    position: relative;
+ }
+
+ 
+container .photo-container image {
     width: 50%;
     /* position: relative;
     transform: translate(-1000px,1000px); */
