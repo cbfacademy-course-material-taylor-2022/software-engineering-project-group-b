@@ -50,7 +50,7 @@ const Signature= () => {
 
    return (
     <>
-    <div classnName="overlay">
+    <div className="overlay">
     <NavbarSmall
         minimal={true}
         setShowModal={() => {

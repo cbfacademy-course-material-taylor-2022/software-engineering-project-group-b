@@ -1,14 +1,10 @@
 
-// import React, { useState, useEffect } from "react";
-// // import Navbar from './components/Navbar.js'
-// import NavbarSmall from './components/NavbarSmall.js'
-// import onBoarding from './onBoarding.js'
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import React from 'react'
 // import React, { useState } from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Profile from './Profile'
 import Signature from './Signature'
 import Thanks from './Thanks'
     
@@ -17,8 +13,9 @@ const App = () => {
     return(
         <Router>
             <Routes>
-                <Route path="/" element={<Signature />}/>
-                <Route exact path="/" element={ <Thanks/> }/>   
+                <Route path="/" element={<Profile />}/>
+                <Route path="/Signature" element={<Signature />}/>
+                <Route path="/Thanks" element={ <Thanks/> }/>   
             </Routes>
         </Router>
         );
