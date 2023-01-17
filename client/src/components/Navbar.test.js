@@ -4,9 +4,9 @@ import Navbar from './Navbar';
 
 describe('Navbar', () => {
     it('renders expected elements', () => {
-        const { getByText } = render(< Navbar />);
-
-    expect(linkElement).toBeInTheDocument();
+        const navbar = mount(<Navbar/>);
+        var image = navbar.find('img');
+    expect(image).toBeInTheDocument();
     // expect(container.firstChild).toBeDefined();
     
     });

@@ -13,6 +13,10 @@
     height: 100vh;
     position: fixed; */
     background-color: rgb(156, 157, 157); 
+    width: 100%;
+    height: 100%;
+    display:inline-block
+
   } 
 
   
@@ -31,7 +35,7 @@
     /* padding: 20px 10px; */
     /* padding-top: 50px; */
     padding-right: 50px;
-    margin-left: 20px;
+    margin-left: 30px;
     position:relative;
     top:30px;
 
@@ -39,13 +43,13 @@
 }
 
 @media (max-width: 600px) {
-   .yellow-border {
+   .titles {
     font-size:24px;
    }
 }
 
 @media (max-width: 400px) {
-    .yellow-border {
+    .titles {
      font-size:18px;
     }
  }
@@ -62,24 +66,36 @@
     margin-bottom: 50px ;
     margin-top: 50px; 
     padding-right: 50px;
-    margin-left: 20px;
+    margin-left: 30px;
     position:relative;
-    top:30px;
+    top:20px;
 
 
  }
 
- @media (max-width: 600px) {
-    .yellow-border2 {
-     font-size:24px;
-    }
+
+
+
+
+  .yellow-border3 {
+    border: solid 2px rgb(255, 255, 0);
+    text-align: center;
+    box-sizing:border-box;
+    /* padding: 10px; */
+    display: "inline-block";
+    background-color:rgb(255, 255, 0) ;
+    font-size: 1.5em;
+    /* font-size:36px; */
+    margin-bottom: 50px ;
+    margin-top: 50px; 
+    padding-right: 50px;
+    margin-left: 30px;
+    position:relative;
+    top:10px;
+
+
  }
- 
- @media (max-width: 400px) {
-     .yellow-border2 {
-      font-size:18px;
-     }
-  }
+
 
 
 .container form {
@@ -177,12 +193,13 @@ container .photo-container img {
     max-height: 100%;
     /* object-fit: contain; */
     overflow: hidden;
+    
 
  }
 
  @media (max-width: 600px) {
     .photo-container img {
-     width: 100%;
+     width: 80%;
     }
  }
 
@@ -191,6 +208,14 @@ container .photo-container img {
     transform: translate(-4000px,4000px);
     
  }
+
+ @media only screen and (min-width: 400px) {
+    .image{
+        position: absolute;
+        transform: translate(-4000px,4000px);
+    }
+ }
+
 /* submit form button required */
 
 /* container form .photo-container img { */

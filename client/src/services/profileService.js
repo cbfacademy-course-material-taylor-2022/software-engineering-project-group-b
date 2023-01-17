@@ -7,6 +7,10 @@
 
    return response.data || [];
  };
+ const createProfile = async (profile) => {
+  const response = await axios.post(`/api/profile`, profile);
 
+  return response.data || [];
+};
  // All of the endpoints in this file can be exported below
- export { getAllProfiles };
+ export { getAllProfiles, createProfile };
