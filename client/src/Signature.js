@@ -62,11 +62,12 @@ const Signature= () => {
   
        <div className="container">
        <div className="background" style={{backgroundColor: 'rgb(156, 157, 157)'}}>
+        <div className="titles">
                  <h1><span className="yellow-border">FREE SCHOOL DINNERS</span></h1>
                <h1><span className="yellow-border2">PETITION.</span></h1>
                
                
-              
+               </div>
            
                
                 
