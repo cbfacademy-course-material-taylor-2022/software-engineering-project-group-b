@@ -1,99 +1,86 @@
 import React, { useState, useEffect } from "react";
 // import { useNavigate } from 'react-router-dom'
 // import axios from 'axios'
-import Navbar from './components/Navbar.js'
-import './profile.css'
+import Navbar from "./components/Navbar.js";
+import "./profile.css";
 // import './signature.css'
-import './App.css'
+import "./App.css";
 // import NavbarSmall from './components/NavbarSmall.js'
 // import Signature from './Signature.js'
 
+// SERVICES THAT CALL OUR API ENDPOINTS
+import { getAllProfiles } from "./services/profileService";
 
+const Profile = () => {
+  const [profiles, setProfiles] = useState(null);
 
- // SERVICES THAT CALL OUR API ENDPOINTS
- import { getAllProfiles } from "./services/profileService";
+  useEffect(() => {
+    async function getProfiles() {
+      if (!profiles) {
+        const response = await getAllProfiles();
+        setProfiles(response);
+      }
+    }
 
- const Profile= () => {
-   const [profiles, setProfiles] = useState(null);
+    getProfiles();
+  }, [profiles]);
 
-   useEffect(() => {
-     async function getProfiles() {
-       if (!profiles) {
-         const response = await getAllProfiles();
-         setProfiles(response);
-       }
-     }
+  //    let navigate = useNavigate()
 
-     getProfiles();
-   }, [profiles]);
-
-//    let navigate = useNavigate()
-
-   const renderProfile = (user) => {
-     return (
-    
-
-       <li key={user._id}>
-         <h3>
-           {`${user.first_name} 
+  const renderProfile = (user) => {
+    return (
+      <li key={user._id}>
+        <h3>
+          {`${user.first_name} 
            ${user.last_name},`}
-         </h3>
-         {/* <p>{user.location}</p> */}
-       </li>
+        </h3>
+        {/* <p>{user.location}</p> */}
+      </li>
+    );
+  };
 
-     );
-   };
-
-   return (
+  return (
     <>
-     <div className="overlay">
-     {/* <div className="container"> */}
-  
-     {/* <div className="background" style={{backgroundColor: 'rgb(156, 157, 157)'}}> */}
+      <div className="overlay">
+        {/* <div className="container"> */}
 
-        <Navbar/>
+        {/* <div className="background" style={{backgroundColor: 'rgb(156, 157, 157)'}}> */}
+
+        <Navbar />
         {/* <NavbarSmall/> */}
-       
+
         <div className="container">
+          <div className="left-column">
+            <h1>
+              <span className="yellow-border">OUR LOYAL</span>
+            </h1>
+            <h1>
+              <span className="yellow-border2">SUPPORTERS</span>
+            </h1>
+            <h1>
+              <span className="yellow-border3">1,049 STRONG</span>
+            </h1>
+          </div>
+          {/* style={{position:"absolute", marginTop:"-180px", marginLeft: "100px"}}width={650} */}
 
-    
-       <div className="left-column">
-        <h1><span className="yellow-border">OUR LOYAL</span></h1>
-               <h1><span className="yellow-border2">SUPPORTERS</span></h1>
-               <h1><span className="yellow-border3">1,049 STRONG</span></h1>
-               
-               </div>
-               {/* style={{position:"absolute", marginTop:"-180px", marginLeft: "100px"}}width={650} */}
-               
-         <section>      
-               
-           <div className="right-column">
-       <ul>
-         {profiles && profiles.length > 0 ? (
-           profiles.map((profile) => renderProfile(profile))
-         ) : (
+          <section>
+            <div className="right-column">
+              <ul>
+                {profiles && profiles.length > 0 ? (
+                  profiles.map((profile) => renderProfile(profile))
+                ) : (
+                  <p>No profiles found</p>
+                )}
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+      {/* </div> */}
 
-           <p>No profiles found</p>
-
-    
-         )}
-       </ul>
-       </div>
-       </section>
-       </div>
-       
-   
-       </div> 
-     {/* </div> */}
-
-      
-     {/* </div> */}
-     
-     </>
-   )
- 
- }
-
+      {/* </div> */}
+    </>
+  );
+};
 
 export default Profile;
-

@@ -8,13 +8,14 @@
  
 .home-background {
     background-color: rgb(156, 157, 157);
-   
+    height: 1080px;
 }
 
 .right-column{
     float: right;
     width: 53%;
     margin-top: -250px;
+    height:1080px;
 }
  
 ul {

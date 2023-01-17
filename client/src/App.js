@@ -1,7 +1,7 @@
 
 
-import React from 'react'
-// import React, { useState } from 'react';
+
+import React, { useState } from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Profile from './Profile'
@@ -9,11 +9,13 @@ import Signature from './Signature'
 import Thanks from './Thanks'
     
     
+
 const App = () => {
+    // const [first_name, setFirstName] = useState(null);
     return(
         <Router>
             <Routes>
-                <Route path="/" element={<Profile />}/>
+                <Route path="/" element={<Signature />}/>
                 <Route path="/Signature" element={<Signature />}/>
                 <Route path="/Thanks" element={ <Thanks/> }/>  
                 <Route path="/Profile" element={ <Profile/> }/>  
