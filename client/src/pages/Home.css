@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+<html>
+<head>
+<style>
+body {
+    background-color: black;
+}
+h1{
+    color: rgb(4, 4, 4);
+    text-align: left;
+}
+p{
+    font-family:
+    font-size: 20px;
+}
+</style>
+</head>
+</body>
