@@ -5,11 +5,28 @@ import Navbar from "./components/Navbar.js";
 import "./profile.css";
 // import './signature.css'
 import "./App.css";
+// import mongoose from 'mongoose';
 // import NavbarSmall from './components/NavbarSmall.js'
 // import Signature from './Signature.js'
 
 // SERVICES THAT CALL OUR API ENDPOINTS
 import { getAllProfiles } from "./services/profileService";
+
+// const EmailCount = () => {
+//   const [EmailCount, setEmailCount] = useState(0);
+
+//   useEffect(() => {
+
+//     mongoose.connect('mongodb://localhost:27017/profiles', {useNewUrlParser: true, useUnifiedTopology: true})
+//     const db = mongoose.connection
+//     db.on('error', (error) => console.error(error))
+//     console.error.bind(console, 'connection error:');
+//     db.once('open',async () => {
+//       const email = mongoose.model('user._id', new mongoose.Schema({}));
+//       const count = await user._id.countDocuments();
+//       setEmailCount(count);
+//     })
+// }, []);
 
 const Profile = () => {
   const [profiles, setProfiles] = useState(null);
@@ -39,6 +56,8 @@ const Profile = () => {
     );
   };
 
+
+
   return (
     <>
       <div className="overlay">
@@ -58,7 +77,7 @@ const Profile = () => {
               <span className="yellow-border2">SUPPORTERS</span>
             </h1>
             <h1>
-              <span className="yellow-border3">1,049 STRONG</span>
+              <span className="yellow-border3">1007 STRONG</span>
             </h1>
           </div>
           {/* style={{position:"absolute", marginTop:"-180px", marginLeft: "100px"}}width={650} */}

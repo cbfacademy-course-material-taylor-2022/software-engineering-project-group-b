@@ -10,3 +10,22 @@ navbarSmall{
     
 }
 
+logo {
+    max-width: 100%;
+    /* margin:0 auto; */
+   
+  
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px){
+    .navbarSmall {
+        height: 200px;
+        background-color: black;
+    
+    /* flex-direction: column;*/
+    }
+    logo{
+        width: 50%;
+    }
+    
+}
