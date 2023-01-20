@@ -51,7 +51,21 @@
  
 }
 
+  /* @media (max-width: 600px) {
+   .titles {
+    font-size:24px;
+   }
+}
 
+<<<<<<< HEAD
+=======
+@media (max-width: 400px) {
+    .titles {
+     font-size:18px;
+    }
+ } */
+
+>>>>>>> 450b87c (testing responsiveness)
   .yellow-border2 {
     border: solid 2px rgb(255, 255, 0);
     text-align: center;
@@ -90,8 +104,14 @@
     position: relative;
     top: 10px;
   }
+<<<<<<< HEAD
 
  
+=======
+
+
+
+>>>>>>> 450b87c (testing responsiveness)
 
  @media (max-width: 600px) {
     .titles {
@@ -106,7 +126,7 @@
   }
 
 
-.container form {
+  .container form {
     display: flex;
     /* flex-direction: column; */
     /* flex-wrap: nowrap;
@@ -115,8 +135,11 @@
 
     justify-content: center;
     margin-left: -200px;
+<<<<<<< HEAD
     justify-content:center; 
     margin-left: -128px;
+=======
+>>>>>>> 450b87c (testing responsiveness)
     /* margin-top: 40px;
     margin-bottom: 10px; */
   }
@@ -201,8 +224,13 @@ container form input[type=submit]:active{
     }
  }
 
+<<<<<<< HEAD
 /* container .photo-container img {
     width: 50%; */
+=======
+  container .photo-container img {
+    width: 50%;
+>>>>>>> 450b87c (testing responsiveness)
     /* position: relative;
     transform: translate(-1000px,1000px); */
     /* margin-top: -150px;
@@ -210,11 +238,19 @@ container form input[type=submit]:active{
     /* max-width: 100%;
     max-height: 100%; */
     /* object-fit: contain; */
+<<<<<<< HEAD
 
   /* }
 
 } */
 
+=======
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+
+
+>>>>>>> 450b87c (testing responsiveness)
   /* @media only screen and (min-width: 425px) {
  titles {
     display:flex;
@@ -231,7 +267,10 @@ container form input[type=submit]:active{
 } */
 
 /* @media (max-width: 600px) {
+<<<<<<< HEAD
   @media (max-width: 600px) {
+=======
+>>>>>>> 450b87c (testing responsiveness)
     .photo-container img {
      width: 80%;
     }
@@ -249,7 +288,7 @@ container form input[type=submit]:active{
         transform: translate(-4000px,4000px);
     }
  } */
- /* }  */
+ /* } 
 
 /* submit form button required */
 
@@ -288,4 +327,5 @@ container form input[type=submit]:active{
 /* border-top: solid 1px rgb(213,213,213); */
 /* background-color:rgb(156, 157, 157) */
 
+/* } 
 /* } 
