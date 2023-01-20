@@ -9,9 +9,11 @@ package-lock.json
 
 # testing
 /coverage
+/screenshots
 
 # production
 /build
+
 
 # misc
 .DS_Store
