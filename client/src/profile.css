@@ -6,21 +6,39 @@
     width: 25%;
 } */
  
-.home-background {
-    background-color: rgb(156, 157, 157);
-    height: 1080px;
+
+@media only screen and (min-width: 375px){
+    .home-background {
+        background-color: rgb(156, 157, 157);
+        height: 1080px;
+    }
+
+
+    .right-column{
+        float: right;
+        width: 53%;
+        margin-top: -250px;
+        height:1080px;
+    }
+
+
+    
+    ul {
+        list-style-type: none;
+        font-size: 20px;
+        color:white
+    
+    }
 }
 
-.right-column{
-    float: right;
-    width: 53%;
-    margin-top: -250px;
-    height:1080px;
-}
- 
-ul {
-    list-style-type: none;
-    font-size: 20px;
-    color:white
-   
-}
+/* @media only screen and (min-width: 800px) {
+    .home-background {
+       max-width: 800px;
+       align-items: center;
+    }
+    .right-column{
+       display:flex;
+       flex-direction:row;
+       width:100%;
+    }
+} */
