@@ -19,6 +19,7 @@ const profileRoutes = (app) => {
 
   app.put(`/api/profile/:id`, async (req, res) => {
     const { id } = req.params;
+    console.log(req.body)
 
     const profile = await Profile.findByIdAndUpdate(id, req.body);
 
