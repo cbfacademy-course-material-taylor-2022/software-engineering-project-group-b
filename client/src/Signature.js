@@ -26,7 +26,8 @@ const Signature= () => {
         console.log('submission')
         e.preventDefault()
         try{
-            const response = await axios.put('http:localhost:8080/profiles', {formData})
+
+            const response = await axios.post('http://localhost:3000/api/profile', {formData})
             console.log(response)
             const success = response.status === 2000
             if (success) navigate('/')
