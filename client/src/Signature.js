@@ -17,19 +17,19 @@ const Signature= () => {
         first_name: "",
         last_name: "",
         email: "",
-        location: ""
+        location: "",
     })
 
     let navigate = useNavigate()
 
     const handleSubmit = async (e) => {
-        console.log('submission')
+        console.log('added')
         e.preventDefault()
         try{
-            const response = await axios.put('http:localhost:8080/profiles', {formData})
+            const response = await axios.post('http:localhost:8080/profile', {formData})
             console.log(response)
             const success = response.status === 2000
-            if (success) navigate('/')
+            if (success) navigate('/thanks')
             //add path above
 
         } catch (err) {
@@ -127,6 +127,7 @@ const Signature= () => {
                     class="form-control"
                 />  
                    {/* <input type="submit" className="submit-button"/> */}
+                   {/* <input type="submit" /> */}
                    <button className="primary-button" style={{fontSize:"40px", borderColor:"black", backgroundColor:"black", borderWidth: "10px", width: "350px", color: 'rgb(255,255,0)', marginTop: "30px", }}onClick={handleSubmit}>Sign the petition</button>
                 </section>
 
