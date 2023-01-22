@@ -74,30 +74,33 @@ const Signature= () => {
 
                  <form onSubmit={handleSubmit}>
                     <section>
-                        <label htmlFor="first_name">First Name</label>
+                        <label htmlFor="first_name" class="form-label">First Name</label>
                         <input
                         id="first_name"
                         type='text'
                         name="first_name"
+                        class = "form-control"
                         // placeholder="First Name"
                         required={true}
                         value={formData.first_name}
                         onChange={handleChange}
                     />
 
-                <label htmlFor="last_name">Last Name</label>
+                <label htmlFor="last_name" class="form-label">Last Name</label>
                     <input
                     id="last_name"
                     type='text'
                     name="last_name"
+                    class = "form-control"
                     // placeholder="Last Name"
                     required={true}
                     value={formData.last_name}
                     onChange={handleChange}
 
                 />
+                
 
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email" class="form-label" >Email</label>
                     <input
                     id="email"
                     type='text'
@@ -106,11 +109,13 @@ const Signature= () => {
                     required={true}
                     value={formData.email}
                     onChange={handleChange}
+                    class="form-control"
+                    
 
                 />
               
 
-                <label htmlFor="location">Location</label>
+                <label htmlFor="location" class="form-label">Location</label>
                     <input
                     id="location"
                     type='text'
@@ -119,6 +124,7 @@ const Signature= () => {
                     required={true}
                     value={formData.location}
                     onChange={handleChange}
+                    class="form-control"
                 />  
                    {/* <input type="submit" className="submit-button"/> */}
                    <button className="primary-button" style={{fontSize:"40px", borderColor:"black", backgroundColor:"black", borderWidth: "10px", width: "350px", color: 'rgb(255,255,0)', marginTop: "30px", }}onClick={handleSubmit}>Sign the petition</button>
@@ -126,7 +132,8 @@ const Signature= () => {
 
                 <section>
             
-                 <div className="photo-container"><img src={image} alt="meals" style={{position:"absolute", marginTop:"-180px", marginLeft: "100px"}}width={650}/>
+                 <div className="photo-container"><img src={image} class="img-fluid"  alt="meals" />
+                 
                 </div>
               
                     </section>
