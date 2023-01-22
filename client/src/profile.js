@@ -10,6 +10,7 @@ import "./App.css";
 
 // SERVICES THAT CALL OUR API ENDPOINTS
 import { getAllProfiles } from "./services/profileService";
+import { getEmailcount } from "./services/profileService";
 
 const Profile = () => {
   const [profiles, setProfiles] = useState(null);
@@ -39,6 +40,7 @@ const Profile = () => {
     );
   };
 
+
   return (
     <>
       <div className="overlay">
@@ -58,7 +60,7 @@ const Profile = () => {
               <span className="yellow-border2">SUPPORTERS</span>
             </h1>
             <h1>
-              <span className="yellow-border3">1,049 STRONG</span>
+              <span className="yellow-border3">${getEmailcount} STRONG</span>
             </h1>
           </div>
           {/* style={{position:"absolute", marginTop:"-180px", marginLeft: "100px"}}width={650} */}

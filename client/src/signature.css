@@ -29,7 +29,7 @@
     /* padding: 10px; */
     display: "inline-block";
     background-color:rgb(255, 255, 0) ;
-    font-size: 1.5em;
+    font-size: 0.5em;
     margin-bottom: 50px ;
     margin-top: 40%; 
     /* padding: 20px 10px; */
@@ -61,7 +61,7 @@
     /* padding: 10px; */
     display: "inline-block";
     background-color:rgb(255, 255, 0) ;
-    font-size: 1.5em;
+    font-size: 0.5em;
     /* font-size:36px; */
     margin-bottom: 50px ;
     margin-top: 50px; 
@@ -84,7 +84,7 @@
     /* padding: 10px; */
     display: "inline-block";
     background-color:rgb(255, 255, 0) ;
-    font-size: 1.5em;
+    font-size: 0.5em;
     /* font-size:36px; */
     margin-bottom: 50px ;
     margin-top: 50px; 
@@ -95,6 +95,8 @@
 
 
  }
+
+
 
 
 
@@ -197,9 +199,9 @@ container .photo-container img {
 
  }
 
- @media (max-width: 600px) {
+ @media (max-width: 400px) {
     .photo-container img {
-     width: 80%;
+     width: 50%;
     }
  }
 
