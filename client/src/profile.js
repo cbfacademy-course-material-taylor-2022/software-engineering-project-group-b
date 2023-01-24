@@ -2,15 +2,32 @@ import React, { useState, useEffect } from "react";
 // import { useNavigate } from 'react-router-dom'
 // import axios from 'axios'
 import Navbar from "./components/Navbar.js";
-import "./profile.css";
+import "./Profile.css";
 // import './signature.css'
 import "./App.css";
+// import mongoose from 'mongoose';
 // import NavbarSmall from './components/NavbarSmall.js'
 // import Signature from './Signature.js'
 
 // SERVICES THAT CALL OUR API ENDPOINTS
 import { getAllProfiles, getSignatureCount } from "./services/profileService";
 //import { getEmailCount } from "./services/profileService";
+
+// const EmailCount = () => {
+//   const [EmailCount, setEmailCount] = useState(0);
+
+//   useEffect(() => {
+
+//     mongoose.connect('mongodb://localhost:27017/profiles', {useNewUrlParser: true, useUnifiedTopology: true})
+//     const db = mongoose.connection
+//     db.on('error', (error) => console.error(error))
+//     console.error.bind(console, 'connection error:');
+//     db.once('open',async () => {
+//       const email = mongoose.model('user._id', new mongoose.Schema({}));
+//       const count = await user._id.countDocuments();
+//       setEmailCount(count);
+//     })
+// }, []);
 
 const Profile = () => {
   const [profiles, setProfiles] = useState(null);
@@ -42,7 +59,6 @@ const Profile = () => {
   };
 
 
- 
 
   useEffect(() => {
     async function getCount() {
@@ -53,6 +69,7 @@ const Profile = () => {
     }
     getCount();
   }, [count]);
+
 
   return (
     <>
@@ -73,7 +90,9 @@ const Profile = () => {
               <span className="yellow-border2">SUPPORTERS</span>
             </h1>
             <h1>
+
               <span className="yellow-border3"> {count} STRONG</span>
+
             </h1>
           </div>
           {/* style={{position:"absolute", marginTop:"-180px", marginLeft: "100px"}}width={650} */}

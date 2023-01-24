@@ -13,6 +13,7 @@ import "./App.css";
 // SERVICES THAT CALL OUR API ENDPOINTS
 //  import { getAllProfiles } from "./services/profileService";
 
+
 const Signature = () => {
 //   const [cookies, setCookie, removeCookie] = useCookies(["userId"]);
   const [formData, setFormData] = useState({
@@ -38,6 +39,7 @@ const Signature = () => {
       //add path above
     } catch (err) {
       console.log(err);
+
     }
   };
 
@@ -55,57 +57,67 @@ const Signature = () => {
 
   return (
     <>
-      <div className="overlay">
-        <NavbarSmall minimal={true} setShowModal={() => {}} showModal={false} />
 
-        <div className="container">
-          <div
-            className="background"
-            style={{ backgroundColor: "rgb(156, 157, 157)" }}
-          >
-            <div className="titles">
-              <h1>
-                <span className="yellow-border">FREE SCHOOL DINNERS</span>
-              </h1>
-              <h1>
-                <span className="yellow-border2">PETITION.</span>
-              </h1>
-            </div>
+    <div className="overlay">
+    <NavbarSmall
+        minimal={true}
+        setShowModal={() => {
 
-            <form onSubmit={handleSubmit}>
-              <section>
-                <label htmlFor="first_name">First Name</label>
-                <input
-                  id="first_name"
-                  type='text'
-                  name="first_name"
-                  // placeholder="First Name"
-                  required={true}
-                  value={formData.first_name}
-                  onChange={handleChange}
+        }}
+        showModal={false}
+    
+    />
+  
+       <div className="container">
+       <div className="background" style={{backgroundColor: 'rgb(156, 157, 157)'}}>
+        <div className="titles">
+                 <h1><span className="yellow-border">FREE SCHOOL DINNERS</span></h1>
+               <h1><span className="yellow-border2">PETITION.</span></h1>
+               
+               
+               </div>
+       
+                 <form onSubmit={handleSubmit}>
+                    <section>
+                        <label htmlFor="first_name" class="form-label">First Name</label>
+                        <input
+                        id="first_name"
+                        type='text'
+                        name="first_name"
+                        class = "form-control"
+                        // placeholder="First Name"
+                        required={true}
+                        value={formData.first_name}
+                        onChange={handleChange}
+                    />
+
+                <label htmlFor="last_name" class="form-label">Last Name</label>
+                    <input
+                    id="last_name"
+                    type='text'
+                    name="last_name"
+                    class = "form-control"
+                    // placeholder="Last Name"
+                    required={true}
+                    value={formData.last_name}
+                    onChange={handleChange}
+                />
+                
+
+
+                <label htmlFor="email" class="form-label" >Email</label>
+                    <input
+                    id="email"
+                    type='text'
+                    name="email"
+                    // placeholder="Email"
+                    required={true}
+                    value={formData.email}
+                    onChange={handleChange}
+                    class="form-control"
+
                 />
 
-                <label htmlFor="last_name">Last Name</label>
-                <input
-                  id="last_name"
-                  type="text"
-                  name="last_name"
-                  // placeholder="Last Name"
-                  required={true}
-                  value={formData.last_name}
-                  onChange={handleChange}
-                />
-
-                <label htmlFor="email">Email</label>
-                <input
-                  id="email"
-                  type="text"
-                  name="email"
-                  // placeholder="Email"
-                  required={true}
-                  value={formData.email}
-                  onChange={handleChange}
-                />
 
                 <label htmlFor="location">Location</label>
                 <input
@@ -147,6 +159,28 @@ const Signature = () => {
                     }}
                     width={650}
                   />
+
+                /*<label htmlFor="location" class="form-label">Location</label>
+                    <input
+                    id="location"
+                    type='text'
+                    name="location"
+                    // placeholder="Location"
+                    required={true}
+                    value={formData.location}
+                    onChange={handleChange}
+                    class="form-control"
+                />  
+                   {/* <input type="submit" className="submit-button"/> */}
+                   {/* <input type="submit" /> */}
+                   <button className="primary-button" style={{fontSize:"40px", borderColor:"black", backgroundColor:"black", borderWidth: "10px", width: "350px", color: 'rgb(255,255,0)', marginTop: "30px", }}onClick={handleSubmit}>Sign the petition</button>
+                </section>
+
+                <section>
+            
+                 <div className="photo-container"><img src={image} class="img-fluid"  alt="meals" />*/
+                 
+
                 </div>
               </section>
             </form>

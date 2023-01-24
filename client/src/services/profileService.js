@@ -13,17 +13,18 @@
   return response.data || [];
 };
 
+
 const getSignatureCount = async () => {
   const response = await axios.get('http://localhost:8080/api/profile/count');
 
   return response.data || [];
 };
-// const getEmailCount = async () => {
-//     const response = await axios.get('/api/profile', { params: { count: true } });
-
-//     return response.data || 0;
-// };
 
 
  // All of the endpoints in this file can be exported below
  export { getAllProfiles, createProfile, getSignatureCount}
+
+
+  
+
+

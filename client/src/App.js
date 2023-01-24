@@ -8,9 +8,6 @@ import Profile from './Profile'
 import Signature from './Signature'
 import Thanks from './Thanks'
 
-
-    
-
 const App = () => {
     // const [first_name, setFirstName] = useState(null);
     return(
