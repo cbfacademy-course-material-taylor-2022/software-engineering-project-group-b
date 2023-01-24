@@ -29,6 +29,12 @@ const profileRoutes = (app) => {
     });
   });
 
+//   const app = require('express')();
+// const profileRoutes = require('./routes/profileRoutes');
+
+// profileRoutes(app);
+    
+
   app.delete(`/api/profile/:id`, async (req, res) => {
     const { id } = req.params;
 
@@ -40,5 +46,16 @@ const profileRoutes = (app) => {
     });
   });
 };
+
+
+  //get email count
+  app.get(`/api/profile`, async (req, res) => {
+
+    const count = await Profile.count();
+    return res.status(200).send({count})
+
+  });
+
+
 
 module.exports = profileRoutes;
