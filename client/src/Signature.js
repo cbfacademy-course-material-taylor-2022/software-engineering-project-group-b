@@ -63,15 +63,12 @@ const Signature= () => {
        <div className="container">
        <div className="background" style={{backgroundColor: 'rgb(156, 157, 157)'}}>
         <div className="titles">
-                 <h1><span className="yellow-border">FREE SCHOOL DINNERS</span></h1>
-               <h1><span className="yellow-border2">PETITION.</span></h1>
+                 <h2><span className="yellow-border">FREE SCHOOL DINNERS</span></h2>
+               <h2><span className="yellow-border2">PETITION.</span></h2>
                
                
-               </div>
-           
-               
-                
-
+        </div>
+          
                  <form onSubmit={handleSubmit}>
                     <section>
                         <label htmlFor="first_name" class="form-label">First Name</label>
@@ -133,8 +130,12 @@ const Signature= () => {
 
                 <section>
             
-                 <div className="photo-container"><img src={image} class="img-fluid"  alt="meals" />
+
+                 <div className="photo-container"><img src={image} alt="meals" style={{position:"absolute", marginTop:"-135px", marginLeft: "100px"}}width={650}/>
+
+             />
                  
+
                 </div>
               
                     </section>
