@@ -18,7 +18,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Signature />}/>
                 <Route path="/Signature" element={<Signature />}/>
-                <Route path="/Thanks" element={ <Thanks/> }/>  
+                {/* <Route path="/Thanks" element={ <Thanks/> }/>   */}
                 <Route path="/Profile" element={ <Profile/> }/>  
             </Routes>
         </Router>

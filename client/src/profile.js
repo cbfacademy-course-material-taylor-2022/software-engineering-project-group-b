@@ -9,11 +9,12 @@ import "./App.css";
 // import Signature from './Signature.js'
 
 // SERVICES THAT CALL OUR API ENDPOINTS
-import { getAllProfiles } from "./services/profileService";
-// import { getEmailCount } from "./services/profileService";
+import { getAllProfiles, getSignatureCount } from "./services/profileService";
+//import { getEmailCount } from "./services/profileService";
 
 const Profile = () => {
   const [profiles, setProfiles] = useState(null);
+  const [count, setCount] = useState(null);
 
   useEffect(() => {
     async function getProfiles() {
@@ -41,16 +42,17 @@ const Profile = () => {
   };
 
 
-  const [count, setCount] = useState(0);
+ 
 
   useEffect(() => {
     async function getCount() {
-      const respons = await fetch("/api/profile/count");
-      const data = await respons.json();
+      const response = await getSignatureCount();
+      const data = await JSON.parse(response);
+      console.log(data);
       setCount(data.count);
     }
     getCount();
-  }, []);
+  }, [count]);
 
   return (
     <>
