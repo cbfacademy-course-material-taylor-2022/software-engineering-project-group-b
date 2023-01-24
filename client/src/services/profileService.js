@@ -13,12 +13,12 @@
   return response.data || [];
 };
 
-const getEmailCount = async () => {
-    const response = await axios.get('/api/profile', { params: { count: true } });
+// const getEmailCount = async () => {
+//     const response = await axios.get('/api/profile', { params: { count: true } });
 
-    return response.data || 0;
-};
+//     return response.data || 0;
+// };
 
 
  // All of the endpoints in this file can be exported below
- export { getAllProfiles, createProfile, getEmailCount }
+ export { getAllProfiles, createProfile}

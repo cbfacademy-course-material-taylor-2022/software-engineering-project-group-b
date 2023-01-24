@@ -42,17 +42,18 @@
  
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
    .titles {
-    font-size:24px;
+    font-size:1.5rem;
    }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 400px) {
     .titles {
-     font-size:18px;
+     font-size:28px;
     }
  }
+
 
  .yellow-border2 {
     border: solid 2px rgb(255, 255, 0);

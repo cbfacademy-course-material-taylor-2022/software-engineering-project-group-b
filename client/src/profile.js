@@ -10,7 +10,7 @@ import "./App.css";
 
 // SERVICES THAT CALL OUR API ENDPOINTS
 import { getAllProfiles } from "./services/profileService";
-import { getEmailCount } from "./services/profileService";
+// import { getEmailCount } from "./services/profileService";
 
 const Profile = () => {
   const [profiles, setProfiles] = useState(null);
@@ -41,6 +41,17 @@ const Profile = () => {
   };
 
 
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    async function getCount() {
+      const respons = await fetch("/api/profile/count");
+      const data = await respons.json();
+      setCount(data.count);
+    }
+    getCount();
+  }, []);
+
   return (
     <>
       <div className="overlay">
@@ -60,7 +71,7 @@ const Profile = () => {
               <span className="yellow-border2">SUPPORTERS</span>
             </h1>
             <h1>
-              <span className="yellow-border3">${getEmailCount} STRONG</span>
+              <span className="yellow-border3"> {count} STRONG</span>
             </h1>
           </div>
           {/* style={{position:"absolute", marginTop:"-180px", marginLeft: "100px"}}width={650} */}
