@@ -1,9 +1,13 @@
-describe('Signature', () => {
-  it('should display the Signature page', () => {
-    cy.visit('/')
-    cy.contains('h1', 'Signature')
+describe('Home', () => {
+    it('should display the Home page', () => {
+      cy.visit('/')
+      cy.contains('h1', 'Home')
+    })
+  
+    it('signup button should have a link to the Signature page', () => {
+      cy.visit('/')
+      cy.get('button').click()
+      cy.url().should('include', '/Signature')
+    })
   })
-}
-
-// Path: cypress/e2e/about_spec.cy.js
-// Compare this snippet from cypress.config.js:
+  
