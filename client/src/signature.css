@@ -48,6 +48,9 @@
      font-size:18px;
     }
  } */
+ 
+}
+
 
   .yellow-border2 {
     border: solid 2px rgb(255, 255, 0);
@@ -65,6 +68,11 @@
     position: relative;
     top: 20px;
   }
+    /* position:relative;
+    top:20px;
+
+
+ } */
 
   .yellow-border3 {
     border: solid 2px rgb(255, 255, 0);
@@ -83,7 +91,22 @@
     top: 10px;
   }
 
-  .container form {
+ 
+
+ @media (max-width: 600px) {
+    .titles {
+     font-size:24px;
+    }
+ }
+ 
+ @media (max-width: 400px) {
+     .titles {
+      font-size:18px;
+     }
+  }
+
+
+.container form {
     display: flex;
     /* flex-direction: column; */
     /* flex-wrap: nowrap;
@@ -92,6 +115,8 @@
 
     justify-content: center;
     margin-left: -200px;
+    justify-content:center; 
+    margin-left: -128px;
     /* margin-top: 40px;
     margin-bottom: 10px; */
   }
@@ -167,19 +192,28 @@ container form input[type=submit]:active{
   }
 
   container .photo-container img {
-    width: 50%;
+ @media(max-width: 600px) {
+    .container form input {
+        flex-direction: column;
+    }
+    container form :section {
+        width: 100%;
+    }
+ }
+
+/* container .photo-container img {
+    width: 50%; */
     /* position: relative;
     transform: translate(-1000px,1000px); */
     /* margin-top: -150px;
     margin-left: 150px; */
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 100%;
+    max-height: 100%; */
     /* object-fit: contain; */
-    overflow: hidden;
-    flex-wrap: wrap;
-  }
 
-}
+  /* }
+
+} */
 
   /* @media only screen and (min-width: 425px) {
  titles {
@@ -197,6 +231,7 @@ container form input[type=submit]:active{
 } */
 
 /* @media (max-width: 600px) {
+  @media (max-width: 600px) {
     .photo-container img {
      width: 80%;
     }
@@ -214,6 +249,7 @@ container form input[type=submit]:active{
         transform: translate(-4000px,4000px);
     }
  } */
+ /* }  */
 
 /* submit form button required */
 
@@ -252,4 +288,4 @@ container form input[type=submit]:active{
 /* border-top: solid 1px rgb(213,213,213); */
 /* background-color:rgb(156, 157, 157) */
 
-/* } */
+/* } 
