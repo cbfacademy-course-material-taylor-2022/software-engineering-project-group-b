@@ -93,6 +93,17 @@
 
  }
 
+ @media (max-width: 600px) {
+    .titles {
+     font-size:24px;
+    }
+ }
+ 
+ @media (max-width: 400px) {
+     .titles {
+      font-size:18px;
+     }
+  }
 
 
 
@@ -105,7 +116,7 @@
     margin-right: 10px; */
 
     justify-content:center; 
-    margin-left: -200px;
+    margin-left: -128px;
     /* margin-top: 40px;
     margin-bottom: 10px; */
 
@@ -182,6 +193,15 @@ container form input[type=submit]:active{
     color: rgb(255, 255, 0); 
  }
 
+ @media(max-width: 600px) {
+    .container form input {
+        flex-direction: column;
+    }
+    container form :section {
+        width: 100%;
+    }
+ }
+
 container .photo-container img {
     width: 50%;
     /* position: relative;
@@ -196,7 +216,7 @@ container .photo-container img {
 
  }
 
- @media (max-width: 400px) {
+  @media (max-width: 600px) {
     .photo-container img {
      width: 50%;
     }
@@ -213,7 +233,7 @@ container .photo-container img {
         position: absolute;
         transform: translate(-4000px,4000px);
     }
- }
+ } 
 
 /* submit form button required */
 
