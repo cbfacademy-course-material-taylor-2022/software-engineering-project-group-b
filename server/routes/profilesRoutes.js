@@ -45,11 +45,11 @@ const profileRoutes = (app) => {
       profile,
     });
   });
-};
+
 
 
   //get email count
-  app.get(`/api/profile`, async (req, res) => {
+  app.get(`/api/profile/count`, async (req, res) => {
 
     const count = await Profile.count();
     return res.status(200).send({count})
@@ -57,5 +57,5 @@ const profileRoutes = (app) => {
   });
 
 
-
+};
 module.exports = profileRoutes;

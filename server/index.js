@@ -8,7 +8,10 @@ require("dotenv").config();
  // IMPORT YOUR SCHEMAS HERE
  require("./models/Profiles"); //This is just an example. Don't forget to delete this
 
- const app = express();
+//  const app = express();
+ var cors = require('cors')
+  , app = express();
+app.use(cors());
 
  // This is where your API is making its initial connection to the database
  mongoose.Promise = global.Promise;
@@ -28,7 +31,8 @@ require("dotenv").config();
 
 
   // This is where you are telling your API to use the body-parser middleware
- 
+
+
  app.use(bodyParser.json());
 
  // IMPORT YOUR API ROUTES HERE
