@@ -1,7 +1,7 @@
 //import Navbar from './components/Navbar.js'
 import NavbarSmall from "./components/NavbarSmall.js";
 import { useState } from "react";
-// import { useCookies } from "react-cookie";
+import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./signature.css";
@@ -15,9 +15,9 @@ import "./App.css";
 
 
 const Signature = () => {
-//   const [cookies, setCookie, removeCookie] = useCookies(["userId"]);
+const [cookies, setCookie, removeCookie] = useCookies(null);
   const [formData, setFormData] = useState({
-    // user_id: useCookies.userId,
+    user_id: useCookies.userId,
     first_name: "",
     last_name: "",
     email: "",
@@ -35,7 +35,7 @@ const Signature = () => {
       });
       console.log(response);
       const success = response.status === 2000;
-      if (success) navigate("/");
+      if (success) navigate('/thanks');
       //add path above
     } catch (err) {
       console.log(err);
