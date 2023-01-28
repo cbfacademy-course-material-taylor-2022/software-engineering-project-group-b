@@ -1,7 +1,7 @@
 //import Navbar from './components/Navbar.js'
 import NavbarSmall from "./components/NavbarSmall.js";
 import { useState } from "react";
-import { useCookies } from "react-cookie";
+// import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./signature.css";
@@ -15,9 +15,9 @@ import "./App.css";
 
 
 const Signature = () => {
-const [cookies, setCookie, removeCookie] = useCookies(null);
+// const [cookies, setCookie, removeCookie] = useCookies(null);
   const [formData, setFormData] = useState({
-    user_id: useCookies.userId,
+    // user_id: useCookies.userId,
     first_name: "",
     last_name: "",
     email: "",
@@ -34,8 +34,9 @@ const [cookies, setCookie, removeCookie] = useCookies(null);
         formData,
       });
       console.log(response);
-      const success = response.status === 2000;
-      if (success) navigate('/thanks');
+      const success = response.status === 201;
+      if (success) navigate('/thanks?user=first_name');
+      //concaten
       //add path above
     } catch (err) {
       console.log(err);
@@ -160,7 +161,7 @@ const [cookies, setCookie, removeCookie] = useCookies(null);
                     width={650}
                   /> */}
 
-                /*<label htmlFor="location" class="form-label">Location</label>
+                <label htmlFor="location" class="form-label">Location</label>
                     <input
                     id="location"
                     type='text'
@@ -173,7 +174,7 @@ const [cookies, setCookie, removeCookie] = useCookies(null);
                 />  
                    {/* <input type="submit" className="submit-button"/> */}
                    {/* <input type="submit" /> */}
-                   <button className="primary-button" style={{fontSize:"40px", borderColor:"black", backgroundColor:"black", borderWidth: "10px", width: "350px", color: 'rgb(255,255,0)', marginTop: "30px", }}onClick={handleSubmit}>Sign the petition</button>
+                   <button className="primary-button" style={{fontSize:"40px", borderColor:"black", backgroundColor:"black", borderWidth: "10px", width: "350px", color: 'rgb(255,255,0)', marginTop: "30px", }}onClick={handleSubmit}> tition</button>
                 </section>
 
                 <section>
