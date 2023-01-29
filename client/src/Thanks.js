@@ -1,6 +1,14 @@
+
 import React from 'react'
 import "./Thanks.css"
 import logo from './images/logo_small.png';
+//import React, { useState, useEffect } from "react";
+// import { useNavigate } from 'react-router-dom'
+// import axios from 'axios'
+import Navbar from "./components/Navbar.js";
+import "./Profile.css";
+// import './signature.css'
+import "./App.css";
 
 
 
@@ -24,3 +32,4 @@ const thanks = () => {
 }
 
 export default thanks;
+
