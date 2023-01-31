@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar.js";
-import "./Profile.css";
+import "./Thanks.css";
 import "./App.css";
 import image from "./images/kids_with_hands_up.jpg";
 
@@ -10,7 +10,14 @@ const Thanks = () => {
       <div className="overlay">
         <Navbar />
 
-        <div className="container">
+        <div
+          className="thanks-container"
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "right",
+          }}
+        >
           <div className="left-column">
             <h1>
               <span className="yellow-border">THANKS</span>
@@ -33,9 +40,7 @@ const Thanks = () => {
           </div>
 
           <section>
-            <div className="right-column">
-              <img src={image} alt="React Image" />
-            </div>
+            <div className="right-column"></div>
           </section>
         </div>
       </div>

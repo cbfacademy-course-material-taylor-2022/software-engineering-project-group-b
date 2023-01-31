@@ -112,7 +112,10 @@
 
 
   }
+  .thanks-container{
+    margin-top: 25px;
 
+  }
   .container form section {
       display: flex;
       flex-direction: column;
@@ -216,3 +219,7 @@ container form input[type=submit]:active{
           transform: translate(-4000px, 4000px);
       }
   }
+
+.hands-up{
+    display: inline;
+}
