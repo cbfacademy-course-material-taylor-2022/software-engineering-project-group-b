@@ -1,33 +1,28 @@
+import React, { useState } from "react";
 
-
-
-import React, { useState } from 'react';
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Profile from './profile'
-import Signature from './Signature'
-import Thanks from './Thanks'
-    
-    
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Profile from "./profile";
+import Signature from "./Signature";
+import Thanks from "./Thanks";
+import Home from "./Home";
 
 const App = () => {
-    // const [first_name, setFirstName] = useState(null);
-    return(
-        <Router>
-            <Routes>
-                <Route path="/" element={<Signature />}/>
-                <Route path="/Signature" element={<Signature />}/>
-                <Route path="/Thanks" element={ <Thanks/> }/>
-                <Route path="/Profile" element={ <Profile/> }/>  
-            </Routes>
-        </Router>
-        );
-
-}
+  // const [first_name, setFirstName] = useState(null);
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Signature />} />
+        <Route path="/Signature" element={<Signature />} />
+        <Route path="/Thanks" element={<Thanks />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/Home" element={<Home />} />
+      </Routes>
+    </Router>
+  );
+};
 export default App;
 
 // import React, { useState, useEffect } from "react";
-
 
 //  // SERVICES THAT CALL OUR API ENDPOINTS
 //  import { getAllProfiles } from "./services/profileService";
@@ -51,7 +46,7 @@ export default App;
 
 //        <li key={user._id}>
 //          <h3>
-//            {`${user.first_name} 
+//            {`${user.first_name}
 //            ${user.last_name}`}
 //          </h3>
 //          <p>{user.location}</p>
@@ -67,7 +62,6 @@ export default App;
 //         <NavbarSmall/>
 //         <onBoarding/>
 
-
 //        <ul>
 //          {profiles && profiles.length > 0 ? (
 //            profiles.map((profile) => renderProfile(profile))
@@ -80,11 +74,11 @@ export default App;
 //            </BrowserRouter>
 //          )}
 //        </ul>
-       
+
 //      </div>
-     
+
 //    );
- 
+
 //  }
 
 //  export default App;
@@ -97,4 +91,3 @@ export default App;
 //  }
 
 //  export default App;
-
