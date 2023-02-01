@@ -4,10 +4,14 @@ require("dotenv").config();
  const mongoose = require("mongoose");
  const bodyParser = require("body-parser");
 
+
  // IMPORT YOUR SCHEMAS HERE
  require("./models/Profiles"); //This is just an example. Don't forget to delete this
 
- const app = express();
+//  const app = express();
+ var cors = require('cors')
+  , app = express();
+app.use(cors());
 
  // This is where your API is making its initial connection to the database
  mongoose.Promise = global.Promise;
@@ -15,6 +19,19 @@ require("dotenv").config();
  mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
    useNewUrlParser: true,
  });
+
+//  client.connect(err => {
+//     const collection = client.db("test").profiles("profiles");
+//     profiles,countDocuments({}, 
+//       function(err, count) {
+//       console.log(count);
+//     })
+//     // perform actions on the collection object
+//     client.close();
+
+
+  // This is where you are telling your API to use the body-parser middleware
+
 
  app.use(bodyParser.json());
 
@@ -25,5 +42,7 @@ require("dotenv").config();
 
  const PORT = process.env.PORT;
  app.listen(PORT, () => {
-   console.log(`API running on port ${PORT}`);
- });
+   console.log(`API running on port ${PORT}`)
+  });
+
+  

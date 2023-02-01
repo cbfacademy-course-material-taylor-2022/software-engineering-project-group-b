@@ -10,7 +10,8 @@ import "./App.css";
 // import Signature from './Signature.js'
 
 // SERVICES THAT CALL OUR API ENDPOINTS
-import { getAllProfiles } from "./services/profileService";
+import { getAllProfiles, getSignatureCount } from "./services/profileService";
+//import { getEmailCount } from "./services/profileService";
 
 // const EmailCount = () => {
 //   const [EmailCount, setEmailCount] = useState(0);
@@ -30,6 +31,7 @@ import { getAllProfiles } from "./services/profileService";
 
 const Profile = () => {
   const [profiles, setProfiles] = useState(null);
+  const [count, setCount] = useState(null);
 
   useEffect(() => {
     async function getProfiles() {
@@ -58,6 +60,17 @@ const Profile = () => {
 
 
 
+  useEffect(() => {
+    async function getCount() {
+      const response = await getSignatureCount();
+      const data = await JSON.parse(response);
+      console.log(data);
+      setCount(data.count);
+    }
+    getCount();
+  }, [count]);
+
+
   return (
     <>
       <div className="overlay">
@@ -77,7 +90,9 @@ const Profile = () => {
               <span className="yellow-border2">SUPPORTERS</span>
             </h1>
             <h1>
-              <span className="yellow-border3">1007 STRONG</span>
+
+              <span className="yellow-border3"> {count} STRONG</span>
+
             </h1>
           </div>
           {/* style={{position:"absolute", marginTop:"-180px", marginLeft: "100px"}}width={650} */}

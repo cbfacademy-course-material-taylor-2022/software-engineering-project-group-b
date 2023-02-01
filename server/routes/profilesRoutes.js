@@ -19,6 +19,7 @@ const profileRoutes = (app) => {
 
   app.put(`/api/profile/:id`, async (req, res) => {
     const { id } = req.params;
+    console.log(req.body)
 
     const profile = await Profile.findByIdAndUpdate(id, req.body);
 
@@ -27,6 +28,12 @@ const profileRoutes = (app) => {
       profile,
     });
   });
+
+//   const app = require('express')();
+// const profileRoutes = require('./routes/profileRoutes');
+
+// profileRoutes(app);
+    
 
   app.delete(`/api/profile/:id`, async (req, res) => {
     const { id } = req.params;
@@ -38,6 +45,17 @@ const profileRoutes = (app) => {
       profile,
     });
   });
-};
 
+
+
+  //get email count
+  app.get(`/api/profile/count`, async (req, res) => {
+
+    const count = await Profile.count();
+    return res.status(200).send({count})
+
+  });
+
+
+};
 module.exports = profileRoutes;
