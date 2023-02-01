@@ -9,6 +9,16 @@ describe('Signature', () => {
     cy.get('button').click()
     cy.url().should('include', '/Thanks')
   })
+
+  it('should display the navigation bar', () => {
+    cy.visit('/')
+    cy.get('nav').should('be.visible')
+  }
+
+  it('should display the signature form', () => {
+    cy.visit('/')
+    cy.get('form').should('be.visible')
+  }
 })
 
 

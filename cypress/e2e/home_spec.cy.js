@@ -9,5 +9,10 @@ describe('Home', () => {
       cy.get('button').click()
       cy.url().should('include', '/Signature')
     })
+
+    it('should display the navigation bar', () => {
+      cy.visit('/')
+      cy.get('nav').should('be.visible')
+    } )
   })
   
