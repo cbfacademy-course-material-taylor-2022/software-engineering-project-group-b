@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Profile from './Profile'
+import Profile from './profile'
 import Signature from './Signature'
 import Thanks from './Thanks'
 
@@ -15,7 +15,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Signature />}/>
                 <Route path="/Signature" element={<Signature />}/>
-                {/* <Route path="/Thanks" element={ <Thanks/> }/>   */}
+                <Route path="/Thanks" element={ <Thanks/> }/>
                 <Route path="/Profile" element={ <Profile/> }/>  
             </Routes>
         </Router>

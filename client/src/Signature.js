@@ -14,6 +14,32 @@ import "./App.css";
 //  import { getAllProfiles } from "./services/profileService";
 
 
+//const Signature= () => {
+   // const [formData, setFormData] = useState({
+    //    first_name: "",
+    //    last_name: "",
+   //     email: "",
+  //      location: "",
+  //  })
+
+   // let navigate = useNavigate()
+
+ //   const handleSubmit = async (e) => {
+    //    console.log('added')
+    //    e.preventDefault()
+     //   try{
+       //     const response = await axios.post('http://localhost:8080/profile', {formData})
+       //     console.log(response)
+      //      const success = response.status === 2000
+      //      if (success) navigate('/thanks')
+            //add path above
+
+    //    } catch (err) {
+   //         console.log(err)
+    //    }
+  //  }
+
+
 const Signature = () => {
 //   const [cookies, setCookie, removeCookie] = useCookies(["userId"]);
   const [formData, setFormData] = useState({
