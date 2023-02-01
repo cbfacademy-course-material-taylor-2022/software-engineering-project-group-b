@@ -26,7 +26,7 @@ const Signature= () => {
         console.log('added')
         e.preventDefault()
         try{
-            const response = await axios.post('http:localhost:8080/profile', {formData})
+            const response = await axios.post('http://localhost:8080/profile', {formData})
             console.log(response)
             const success = response.status === 2000
             if (success) navigate('/thanks')
