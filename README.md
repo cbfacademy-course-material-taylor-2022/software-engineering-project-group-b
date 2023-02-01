@@ -41,17 +41,20 @@ I would like to have freedom of choice
 Given that I have choices 
 ```
 
+#### | [TRELLO BOARD](| [TRELLO BOARD](https://trello.com/c/y6uuRQFU/1-ideas-for-apps))
+
 
 ## Diagrams
 
-### Backend Diagram
-
-### Frontend Diagram
+### Frontend & Backend Diagram
+<img src='client/src/images/uml.png'/>
 
 ## Wireframe
 
 ### User experience (UX)
 <img src='client/src/images/wireframe.png'/>
+
+## ABOUT
 
 Here's some boilerplate code with the initial setup for your project.
 
