@@ -41,7 +41,7 @@ import "./App.css";
 
 
 const Signature = () => {
-//   const [cookies, setCookie, removeCookie] = useCookies(["userId"]);
+// const [cookies, setCookie, removeCookie] = useCookies(null);
   const [formData, setFormData] = useState({
     // user_id: useCookies.userId,
     first_name: "",
@@ -60,8 +60,9 @@ const Signature = () => {
         formData,
       });
       console.log(response);
-      const success = response.status === 2000;
-      if (success) navigate("/");
+      const success = response.status === 201;
+      if (success) navigate('/thanks?user=first_name');
+      //concaten
       //add path above
     } catch (err) {
       console.log(err);
@@ -186,7 +187,7 @@ const Signature = () => {
                     width={650}
                   /> */}
 
-                /*<label htmlFor="location" class="form-label">Location</label>
+                <label htmlFor="location" class="form-label">Location</label>
                     <input
                     id="location"
                     type='text'
@@ -199,7 +200,7 @@ const Signature = () => {
                 />  
                    {/* <input type="submit" className="submit-button"/> */}
                    {/* <input type="submit" /> */}
-                   <button className="primary-button" style={{fontSize:"40px", borderColor:"black", backgroundColor:"black", borderWidth: "10px", width: "350px", color: 'rgb(255,255,0)', marginTop: "30px", }}onClick={handleSubmit}>Sign the petition</button>
+                   <button className="primary-button" style={{fontSize:"40px", borderColor:"black", backgroundColor:"black", borderWidth: "10px", width: "350px", color: 'rgb(255,255,0)', marginTop: "30px", }}onClick={handleSubmit}> tition</button>
                 </section>
 
                 <section>
