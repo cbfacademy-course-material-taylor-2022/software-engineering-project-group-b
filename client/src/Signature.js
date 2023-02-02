@@ -146,7 +146,7 @@ const Signature = () => {
                 />
 
 
-                <label htmlFor="location">Location</label>
+                {/* <label htmlFor="location">Location</label>
                 <input
                   id="location"
                   type="text"
@@ -155,9 +155,9 @@ const Signature = () => {
                   required={true}
                   value={formData.location}
                   onChange={handleChange}
-                />
+                /> */}
                 {/* <input type="submit" className="submit-button"/> */}
-                <button
+                {/* <button
                   className="primary-button"
                   style={{
                     fontSize: "40px",
@@ -174,7 +174,7 @@ const Signature = () => {
                 </button>
               </section>
 
-              <section>
+              <section> */}
                 {/* <div className="photo-container">
                   <img
                     src={image}
