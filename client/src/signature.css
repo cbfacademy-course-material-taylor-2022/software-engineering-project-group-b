@@ -25,10 +25,17 @@
 
     /* padding: 10px; */
     display: "inline-block";
-    background-color: rgb(255, 255, 0);
+
+    background-color:rgb(255, 255, 0) ;
+    font-size: 0.5em;
+    margin-bottom: 50px ;
+    margin-top: 40%; 
+
+   /* background-color: rgb(255, 255, 0);
     font-size: 1.5em;
     margin-bottom: 50px;
-    margin-top: 40%;
+    margin-top: 40%;*/
+
     /* padding: 20px 10px; */
     /* padding-top: 50px; */
     padding-right: 50px;
@@ -51,11 +58,26 @@
  
 }
 
+
+/*@media (max-width: 1080px) {
+   .titles {
+    font-size:1.5rem;
+   }
+}
+
+@media (min-width: 400px) {
+    .titles {
+     font-size:28px;
+    }
+ }*/
+
+
   /* @media (max-width: 600px) {
    .titles {
     font-size:24px;
    }
 }
+
 
 @media (max-width: 400px) {
     .titles {
@@ -69,8 +91,13 @@
     box-sizing: border-box;
     /* padding: 10px; */
     display: "inline-block";
+/*
+    background-color:rgb(255, 255, 0) ;
+    font-size: 0.5em;
+*/
     background-color: rgb(255, 255, 0);
     font-size: 1.5em;
+
     /* font-size:36px; */
     margin-bottom: 50px;
     margin-top: 50px;
@@ -90,9 +117,15 @@
     text-align: center;
     box-sizing: border-box;
     /* padding: 10px; */
+
     display: "inline-block";
+/*  
+    background-color:rgb(255, 255, 0) ;
+    font-size: 0.5em;
+*/
     background-color: rgb(255, 255, 0);
     font-size: 1.5em;
+
     /* font-size:36px; */
     margin-bottom: 50px;
     margin-top: 50px;
@@ -119,6 +152,7 @@
 
 
   .container form {
+
     display: flex;
     /* flex-direction: column; */
     /* flex-wrap: nowrap;
@@ -246,7 +280,7 @@ container form input[type=submit]:active{
 /* 
   @media (max-width: 600px) {
     .photo-container img {
-     width: 80%;
+     width: 50%;
     }
  }
 
