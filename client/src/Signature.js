@@ -168,42 +168,12 @@ const Signature = () => {
                     color: "rgb(255,255,0)",
                     marginTop: "30px",
                   }}
-                  onClick={handleSubmit}
-                >
+                  onClick={handleSubmit}>
                   Sign the petition
                 </button>
               </section>
 
               <section>
-                {/* <div className="photo-container">
-                  <img
-                    src={image}
-                    alt="meals"
-                    style={{
-                      position: "absolute",
-                      marginTop: "-180px",
-                      marginLeft: "100px",
-                    }}
-                    width={650}
-                  /> */}
-
-                <label htmlFor="location" class="form-label">Location</label>
-                    <input
-                    id="location"
-                    type='text'
-                    name="location"
-                    // placeholder="Location"
-                    required={true}
-                    value={formData.location}
-                    onChange={handleChange}
-                    class="form-control"
-                />  
-                   {/* <input type="submit" className="submit-button"/> */}
-                   {/* <input type="submit" /> */}
-                   <button className="primary-button" style={{fontSize:"40px", borderColor:"black", backgroundColor:"black", borderWidth: "10px", width: "350px", color: 'rgb(255,255,0)', marginTop: "30px", }}onClick={handleSubmit}> tition</button>
-                </section>
-
-                <section>
             
                  {/* <div className="photo-container"><img src={image} class="img-fluid"  alt="meals" />*/}
 
