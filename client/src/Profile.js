@@ -31,7 +31,7 @@ import { getAllProfiles, getSignatureCount } from "./services/profileService";
 
 const Profile = () => {
   const [profiles, setProfiles] = useState(null);
-  const [count, setCount] = useState(null);
+ // const [count, setCount] = useState(null);
 
   useEffect(() => {
     async function getProfiles() {
@@ -58,17 +58,16 @@ const Profile = () => {
     );
   };
 
-
+const [count, setCount] = useState(0);
 
   useEffect(() => {
     async function getCount() {
-      const response = await getSignatureCount();
-      const data = await JSON.parse(response);
-      console.log(data);
+      const respons = await fetch("/api/profile/count");
+      const data = await respons.json();
       setCount(data.count);
     }
     getCount();
-  }, [count]);
+  }, []);
 
 
   return (
