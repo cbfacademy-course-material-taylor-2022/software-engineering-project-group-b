@@ -98,8 +98,8 @@ const Signature = () => {
        <div className="container">
        <div className="background" style={{backgroundColor: 'rgb(156, 157, 157)'}}>
         <div className="titles">
-                 <h2><span className="yellow-border">FREE SCHOOL DINNERS</span></h2>
-               <h2><span className="yellow-border2">PETITION.</span></h2>
+                 <h3><span className="yellow-border">FREE SCHOOL DINNERS</span></h3>
+               <h3><span className="yellow-border">PETITION.</span></h3>
                
                
         </div>
