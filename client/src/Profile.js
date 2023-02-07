@@ -80,18 +80,16 @@ const [count, setCount] = useState(0);
         <Navbar />
         {/* <NavbarSmall/> */}
 
-        <div className="container">
+        {/* <div className="container"> */}
           <div className="left-column">
             <h1>
               <span className="yellow-border">OUR LOYAL</span>
             </h1>
             <h1>
-              <span className="yellow-border2">SUPPORTERS</span>
+              <span className="yellow-border">SUPPORTERS</span>
             </h1>
             <h1>
-
-              <span className="yellow-border3"> {count} STRONG</span>
-
+              <span className="yellow-border"> {count} STRONG</span>
             </h1>
           </div>
           {/* style={{position:"absolute", marginTop:"-180px", marginLeft: "100px"}}width={650} */}
@@ -108,7 +106,7 @@ const [count, setCount] = useState(0);
             </div>
           </section>
         </div>
-      </div>
+      {/* </div> */}
       {/* </div> */}
 
       {/* </div> */}
