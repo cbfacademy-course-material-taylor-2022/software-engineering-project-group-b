@@ -12,11 +12,11 @@ const Thanks = () => {
 
         <div
           className="thanks-container"
-          style={{
-            backgroundImage: `url(${image})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "right",
-          }}
+          // style={{
+          //   backgroundImage: `url(${image})`,
+          //   backgroundRepeat: "no-repeat",
+          //   backgroundPosition: "right",
+          // }}
         >
           <div className="left-column">
             <h1>
@@ -40,7 +40,7 @@ const Thanks = () => {
           </div>
 
           <section>
-            <div className="right-column"></div>
+            <div className="right-column"><img src={image} /></div>
           </section>
         </div>
       </div>
