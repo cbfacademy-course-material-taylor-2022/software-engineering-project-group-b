@@ -61,7 +61,8 @@ const Signature = () => {
       });
       console.log(response);
       const success = response.status === 201;
-      if (success) navigate('/thanks?user=first_name');
+      if (success) navigate('/thanks', {state:{first_name: formData.first_name}});
+    
       //concaten
       //add path above
     } catch (err) {

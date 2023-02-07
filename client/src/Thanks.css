@@ -3,8 +3,12 @@
       margin: 0;
       padding: 0;
       background-color: rgb(156, 157, 157);
-
   }
+
+  .thanks-container .left-column {
+    text-transform:uppercase;
+  }
+  
 
   /* .container background{ 
      background-color: rgb(156, 157, 157);  
