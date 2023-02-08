@@ -49,7 +49,8 @@ const Thanks = () => {
           </div>
 
           <section>
-            <div className="right-column"><img src={image} /></div>
+            <div className="right-column"><img src={image} alt="meal" style={{marginTop:"-10px", marginLeft: "170px"}}width={30}/></div>
+            
           </section>
         </div>
       </div>
