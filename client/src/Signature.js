@@ -1,55 +1,91 @@
-
 //import Navbar from './components/Navbar.js'
-import NavbarSmall from './components/NavbarSmall.js'
+import NavbarSmall from "./components/NavbarSmall.js";
 import { useState } from "react";
-import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
-import './signature.css'
-import image from './images/newboywithtray.png';
-import './App.css'
+// import { useCookies } from "react-cookie";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import "./signature.css";
+import image from "./images/newboywithtray.png";
+import "./App.css";
 
 
- // SERVICES THAT CALL OUR API ENDPOINTS
+
+// SERVICES THAT CALL OUR API ENDPOINTS
 //  import { getAllProfiles } from "./services/profileService";
 
-const Signature= () => {
-    const [formData, setFormData] = useState({
-        first_name: "",
-        last_name: "",
-        email: "",
-        location: "",
-    })
 
-    let navigate = useNavigate()
+//const Signature= () => {
+   // const [formData, setFormData] = useState({
+    //    first_name: "",
+    //    last_name: "",
+   //     email: "",
+  //      location: "",
+  //  })
 
-    const handleSubmit = async (e) => {
-        console.log('added')
-        e.preventDefault()
-        try{
-            const response = await axios.post('http:localhost:8080/profile', {formData})
-            console.log(response)
-            const success = response.status === 2000
-            if (success) navigate('/thanks')
+   // let navigate = useNavigate()
+
+ //   const handleSubmit = async (e) => {
+    //    console.log('added')
+    //    e.preventDefault()
+     //   try{
+       //     const response = await axios.post('http://localhost:8080/profile', {formData})
+       //     console.log(response)
+      //      const success = response.status === 2000
+      //      if (success) navigate('/thanks')
             //add path above
 
-        } catch (err) {
-            console.log(err)
-        }
+    //    } catch (err) {
+   //         console.log(err)
+    //    }
+  //  }
+
+
+const Signature = () => {
+// const [cookies, setCookie, removeCookie] = useCookies(null);
+  const [formData, setFormData] = useState({
+    // user_id: useCookies.userId,
+    first_name: "",
+    last_name: "",
+    email: "",
+    location: "",
+  });
+
+  let navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    console.log("submission");
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:3000/api/profile", {
+        formData,
+      });
+      console.log(response);
+      const success = response.status === 201;
+      if (success) navigate('/thanks', {state:{first_name: formData.first_name}});
+    
+      //concaten
+      //add path above
+    } catch (err) {
+      console.log(err);
+
     }
+  };
 
-    const handleChange = (e) => {
-        console.log('e', e)
-        const value = e.target.type === "checkbox" ? e.target.checked : e.target.value
-        const name = e.target.name
+  const handleChange = (e) => {
+    console.log("e", e);
+    const value =
+      e.target.type === "checkbox" ? e.target.checked : e.target.value;
+    const name = e.target.name;
 
-        setFormData((prevState) => ({
-            ...prevState,
-            [name]: value
-        }))
-    }
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
-   return (
+  return (
     <>
+
     <div className="overlay">
     <NavbarSmall
         minimal={true}
@@ -63,15 +99,12 @@ const Signature= () => {
        <div className="container">
        <div className="background" style={{backgroundColor: 'rgb(156, 157, 157)'}}>
         <div className="titles">
-                 <h1><span className="yellow-border">FREE SCHOOL DINNERS</span></h1>
-               <h1><span className="yellow-border2">PETITION.</span></h1>
+                 <h3><span className="yellow-border">FREE SCHOOL DINNERS</span></h3>
+               <h3><span className="yellow-border">PETITION.</span></h3>
                
                
-               </div>
-           
-               
-                
-
+        </div>
+          
                  <form onSubmit={handleSubmit}>
                     <section>
                         <label htmlFor="first_name" class="form-label">First Name</label>
@@ -96,9 +129,9 @@ const Signature= () => {
                     required={true}
                     value={formData.last_name}
                     onChange={handleChange}
-
                 />
                 
+
 
                 <label htmlFor="email" class="form-label" >Email</label>
                     <input
@@ -110,45 +143,55 @@ const Signature= () => {
                     value={formData.email}
                     onChange={handleChange}
                     class="form-control"
-                    
 
                 />
-              
 
-                <label htmlFor="location" class="form-label">Location</label>
-                    <input
-                    id="location"
-                    type='text'
-                    name="location"
-                    // placeholder="Location"
-                    required={true}
-                    value={formData.location}
-                    onChange={handleChange}
-                    class="form-control"
-                />  
-                   {/* <input type="submit" className="submit-button"/> */}
-                   {/* <input type="submit" /> */}
-                   <button className="primary-button" style={{fontSize:"40px", borderColor:"black", backgroundColor:"black", borderWidth: "10px", width: "350px", color: 'rgb(255,255,0)', marginTop: "30px", }}onClick={handleSubmit}>Sign the petition</button>
-                </section>
 
-                <section>
+                <label htmlFor="location">Location</label>
+                <input
+                  id="location"
+                  type="text"
+                  name="location"
+                  // placeholder="Location"
+                  required={true}
+                  value={formData.location}
+                  onChange={handleChange}
+                />
+                {/* <input type="submit" className="submit-button"/> */}
+                <button
+                  className="primary-button"
+                  style={{
+                    fontSize: "40px",
+                    borderColor: "black",
+                    backgroundColor: "black",
+                    borderWidth: "10px",
+                    width: "350px",
+                    color: "rgb(255,255,0)",
+                    marginTop: "30px",
+                  }}
+                  onClick={handleSubmit}>
+                  Sign the petition
+                </button>
+              </section>
+
+              <section>
             
-                 <div className="photo-container"><img src={image} class="img-fluid"  alt="meals" />
+                 {/* <div className="photo-container"><img src={image} class="img-fluid"  alt="meals" />*/}
+
+                 <div className="photo-container"><img src={image} alt="meals" style={{position:"absolute", marginTop:"-135px", marginLeft: "100px"}}width={650}/>
+
+               
                  
                 </div>
-              
-                    </section>
+              </section>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-            </form> 
 
-            </div>
-            </div>
-            </div>
-            </>
-      
-       
-        )
-
-   }
 
 export default Signature;
