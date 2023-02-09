@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import { useState } from "react";
-import image from './images/newboywithtray.png';
+import image from "./images/newboywithtray.png";
 
 const Home = () => {
   return (
@@ -16,17 +16,29 @@ const Home = () => {
         <div className="container">
           <div className="left-column">
             <h1>
-             <span className="yellow-border">FREE SCHOOL DINNERS FOR EVERY CHILD</span>
+              <span className="yellow-border">
+                FREE SCHOOL DINNERS FOR EVERY CHILD
+              </span>
             </h1>
           </div>
           {/* style={{position:"absolute", marginTop:"-180px", marginLeft: "150px"}}width={650} */}
 
           <section>
             <div className="left-column">
-                <div className="photo-container"> 
+
+              <div className="photo-container">
                 <div class="clearfix"></div>
-                  <img src={image} class="img-fluid"  alt="meals" width="800" height="600"/>
-                  <p>When children eat filling, healthy, nutritious meals, their
+                <img
+                  src={image}
+                  class="img-fluid"
+                  alt="meals"
+                  width="800"
+                  height="600"
+                />
+              </div>
+            </div>
+            <div>
+            <p>When children eat filling, healthy, nutritious meals, their
                 health and educational outcomes improve, because they can focus
                 in the classroom. Food eaten during the school day makes up
                 around 20% of the entire daily meal consumption. So making sure
@@ -35,20 +47,13 @@ const Home = () => {
                 all primary children is an important way to close the
                 educational attainment gap in the UK.</p>
                 </div>
-            </div>
           </section>
         </div>
-        let btn = document.createElement ('button'),
-        btn.innerHTML = 'Sign the Petition';
-        btn.type = 'submit';
-        btn.name = 'formBtn';
-        document.body.appendChild(btn);
       </div>
       {/* </div> */}
 
       {/* </div> */}
     </>
-    
   );
 };
 export default Home;
