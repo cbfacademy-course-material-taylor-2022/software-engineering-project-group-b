@@ -17,7 +17,12 @@ const Home = () => {
           <div className="left-column">
             <h1>
               <span className="yellow-border">
-                FREE SCHOOL DINNERS FOR EVERY CHILD
+                FREE<br/> 
+                SCHOOL<br/> 
+                DINNERS<br/> 
+                FOR<br/> 
+                EVERY<br/>
+                CHILD
               </span>
             </h1>
           </div>
@@ -36,17 +41,15 @@ const Home = () => {
                   height="600"
                 />
               </div>
-            </div>
-            <div>
-            <p>When children eat filling, healthy, nutritious meals, their
-                health and educational outcomes improve, because they can focus
-                in the classroom. Food eaten during the school day makes up
-                around 20% of the entire daily meal consumption. So making sure
-                the food children eat at primary school is taking place and in
-                the right quantities is crucial. Making school meals free for
-                all primary children is an important way to close the
+              <p>When children eat filling, healthy, nutritious meals, their<br/>
+                health and educational outcomes improve, because they can focus<br/>
+                in the classroom. Food eaten during the school day makes up<br/>
+                around 20% of the entire daily meal consumption. So making sure<br/>
+                the food children eat at primary school is taking place and in<br/>
+                the right quantities is crucial. Making school meals free for<br/>
+                all primary children is an important way to close the<br/>
                 educational attainment gap in the UK.</p>
-                </div>
+            </div>
           </section>
         </div>
       </div>
