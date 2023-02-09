@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import { useState } from "react";
-import image from "./images/newboywithtray.png";
+import image from "./images/free-school-meals.jpg";
 
 const Home = () => {
   return (
@@ -16,8 +16,7 @@ const Home = () => {
         <div className="container">
           <div className="left-column">
             <h1>
-              <span className="yellow-border">
-                FREE<br/> 
+              <span className="yellow-border">FREE<br/> 
                 SCHOOL<br/> 
                 DINNERS<br/> 
                 FOR<br/> 
@@ -30,6 +29,7 @@ const Home = () => {
 
           <section>
             <div className="left-column">
+              <br/>
 
               <div className="photo-container">
                 <div class="clearfix"></div>
@@ -40,7 +40,7 @@ const Home = () => {
                   width="800"
                   height="600"
                 />
-              </div>
+              </div><br/>
               <p>When children eat filling, healthy, nutritious meals, their<br/>
                 health and educational outcomes improve, because they can focus<br/>
                 in the classroom. Food eaten during the school day makes up<br/>
