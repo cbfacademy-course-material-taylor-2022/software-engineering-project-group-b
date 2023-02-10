@@ -26,7 +26,7 @@ const Home = () => {
             </h1>
           </div>
           {/* style={{position:"absolute", marginTop:"-180px", marginLeft: "150px"}}width={650} */}
-
+      
           <section>
             <div className="left-column">
               <br/>
@@ -41,16 +41,25 @@ const Home = () => {
                   height="600"
                 />
               </div><br/>
-              <p>When children eat filling, healthy, nutritious meals, their<br/>
+              <h5>When children eat filling, healthy, nutritious meals, their<br/>
                 health and educational outcomes improve, because they can focus<br/>
                 in the classroom. Food eaten during the school day makes up<br/>
                 around 20% of the entire daily meal consumption. So making sure<br/>
                 the food children eat at primary school is taking place and in<br/>
                 the right quantities is crucial. Making school meals free for<br/>
                 all primary children is an important way to close the<br/>
-                educational attainment gap in the UK.</p>
+                educational attainment gap in the UK.</h5>
             </div>
           </section>
+          <div>
+            <br>
+            let btn = document.createElement ('button'),
+            btn.innerHTML = 'Sign the Petition';
+            btn.type = 'submit';
+            btn.name = 'formBtn';
+            document.body.appendChild(btn);
+            </br>
+            </div>
         </div>
       </div>
       {/* </div> */}
