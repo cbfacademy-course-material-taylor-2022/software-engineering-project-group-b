@@ -50,9 +50,7 @@ const Home = () => {
                 all primary children is an important way to close the<br/>
                 educational attainment gap in the UK.</h5>
             </div>
-          </section>
-          <div>
-            <br>
+            
             let btn = document.createElement ('button'),
             btn.innerHTML = 'Sign the Petition';
             btn.type = 'submit';
